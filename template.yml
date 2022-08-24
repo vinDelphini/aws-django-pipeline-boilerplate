@@ -59,7 +59,7 @@ Resources:
           Fn::Sub: |
             #!/bin/bash -ex
             # Install the AWS CodeDeploy Agent.
-            cd /home/ec2-user/
+            cd /home/ubuntu/
             wget https://aws-codedeploy-${AWS::Region}.s3.amazonaws.com/latest/codedeploy-agent.noarch.rpm
             yum -y install codedeploy-agent.noarch.rpm
             # Install the Amazon CloudWatch Logs Agent.
